@@ -2,12 +2,12 @@
 Reminder-bot is a python based bot that texts Skyler until he breaks.
 
 ## Getting Started
-* Create a Twilio Account
+* Create a [Twilio Account](https://www.twilio.com)
 * Create a [Heroku](https://heroku.com) Account
 * Install [Heroku Cli](https://devcenter.heroku.com/articles/heroku-cli) on your local machine.
 
 ## Installation
-1. Log into [GroupMe Dev Center](https://dev.groupme.com/bots) and create a bot and assign it to a chat. Name the bot Spongebob, (or rename it but update it in the main python file).
+1. Log into [Twilio Account](https://www.twilio.com) and create a bot and assign it to a chat. Name the bot Spongebob, (or rename it but update it in the main python file).
 2. Clone or Download this project and navigate to it in your command line tool. 
 3. From the command line 
 ```
@@ -18,9 +18,9 @@ heroku login
 heroku apps:create NAME-OF-BOT
 ```
 5. This should output a URL for your bot to live at. Log back into Groupme dev center and paste this URL into your bots **Callback URL**
-6. Next, copy your bots **ID** and log into your heroku account.
-7. Push our app to heroku:
+6. TODO
+7. TODO
 ```
 git push heroku master
 ```
-8. Inside Heroku, select your app, and go to settings. Scroll down and click **Reveal Config Vars** and create a variable called **GROUPME_BOT_ID** and paste in the ID of your bot from groupme and click ADD
+8. TODO
