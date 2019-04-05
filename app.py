@@ -1,3 +1,4 @@
+import random
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
@@ -17,8 +18,9 @@ def sms_ahoy_reply():
     # Start our response
     resp = MessagingResponse()
 
+	randoMSG = ['sure','dope','maybe','red.pants.world.wide','rock chalk jayhawk', 'I bet M8']
     # Add a message
-    resp.message("Ahoy! Thanks so much for your message.")
+    resp.message(random.choice(randoMSG))
 
     return str(resp)
 
