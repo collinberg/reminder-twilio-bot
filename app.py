@@ -18,7 +18,7 @@ def sms_ahoy_reply():
     # Start our response
     resp = MessagingResponse()
 
-	randoMSG = ['sure','dope','maybe','red.pants.world.wide','rock chalk jayhawk', 'I bet M8']
+    randoMSG = ['sure','dope','maybe','red.pants.world.wide','rock chalk jayhawk', 'I bet M8']
     # Add a message
     resp.message(random.choice(randoMSG))
 
