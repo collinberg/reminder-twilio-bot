@@ -1,20 +1,12 @@
-# /usr/bin/env python
-# Download the twilio-python library from twilio.com/docs/libraries/python
-from flask import Flask, request
-from twilio.twiml.messaging_response import MessagingResponse
+from flask import Flask
 
-app = Flask(__name__)
+my_awesome_app = Flask(__name__)
 
-@app.route("/sms", methods=['GET', 'POST'])
-def sms_ahoy_reply():
-    """Respond to incoming messages with a friendly SMS."""
-    # Start our response
-    resp = MessagingResponse()
 
-    # Add a message
-    resp.message("Dope")
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
 
-    return str(resp)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    my_awesome_app.run()
