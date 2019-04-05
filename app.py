@@ -2,6 +2,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/dope')
+def dope():
+	return 'Dopeness!'
 
 @app.route('/')
 def hello_world():
